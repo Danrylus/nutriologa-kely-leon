@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masajes para el estrés | Nutrióloga Kely León</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/0efd9eb79e.js" crossorigin="anonymous"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
+        <div class="container">
+
+            <button class="navbar-toggler" type="button" id="toggle-menu" onclick="showMenu()">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <a class="navbar-brand" href="/">
+                    <img src="assets/logo.png" alt="Logo">
+                </a>
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link active" href="/">Inicio <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="/#about-me">Sobre mí</a>
+                    <a class="nav-item nav-link" href="/#services">Servicios</a>
+                    <a class="nav-item nav-link" onclick="scrollToSection('contact'); showMenu();">Contacto</a>
+                    <button class="btn btn-outline-success" href="/#appointment" type="button">Agendar una cita</button>
+                </div>
+            </div>
+    </nav>
+
+    <!-- Page content -->
+
+    <section id="pricing" class="py-5 bg-light">
+        <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+            <h1 class="display-4">Masajes para el estrés</h1>
+            <p class="lead">Reduce el estrés y mejora tu bienestar con nuestros masajes
+                relajantes. Descubre una forma natural de aliviar la tensión y revitalizar tu
+                cuerpo.</p>
+        </div>
+
+        <div class="container">
+            <div class="card-deck mb-3 text-center">
+                <div class="card mb-4 box-shadow">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-normal">Masaje
+                        </h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">$15</h1>
+                        <ul class="list-unstyled mt-3 mb-4 ">
+                            <li class="mb-2 pb-1 border-bottom">Característica 1</li>
+                            <li class="mb-2 pb-1 border-bottom">Característica 2</li>
+                            <li class="pb-1 border-bottom">Característica 3</li>
+                        </ul>
+                        <a
+                            href="https://wa.me/593997129263?text=Hola%2C%20quisiera%20adquirir%20el%20plan%20alimentario%20semanal">
+                            <button type="button" class="btn btn-lg btn-block btn-primary">Agendar cita <i
+                                    class="fa fa-whatsapp"></i></button></a>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <section id="contact" class="bg-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Contáctame</h3>
+                    <p>Estoy dispuesta a ayudarte en todo lo relacionado con tu alimentación y bienestar.</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-phone"></i> (+593) 99 712 9263</li><br>
+                        <li><i class="fa fa-envelope-o"></i> kelyleon@outlook.es</li><br>
+                        <li><i class="fa fa-map-marker"></i> Diego Céspedes OE823 y Joaquín Ruales, Quito, Ecuador</li>
+                        <br>
+                        <li><i class="fa fa-clock-o"></i> Horarios de atención:</li>
+                        <li>Lunes a Viernes de 8am a 3pm</li>
+                        <li>Sábados de 8am a 1pm</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1994.8860770917374!2d-78.55385470503677!3d-0.2756280189007749!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d598c7f39f21b5%3A0x598dd0c7570022a9!2sUnidad%20M%C3%A9dica%20Latinoam%C3%A9rica!5e0!3m2!1ses!2sec!4v1681797410047!5m2!1ses!2sec"
+                        width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white p-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h4 class="mb-4">Sígueme en redes sociales</h4>
+                    <a href="https://www.facebook.com/NutriologaKelyLeon"><i class="fab fa-facebook fa-2x mr-3"></i></a>
+                    <a href="https://www.instagram.com/nutriologa_kely_leon/"><i
+                            class="fab fa-instagram fa-2x mr-3"></i></a>
+                    <a href="https://www.tiktok.com/@kelyleon"><i class="fab fa-tiktok fa-2x"></i></a>
+                </div>
+                <div class="col-12 text-center mt-3">
+                    <p>&copy; 2023 Nutrióloga Kely León - Todos los derechos reservados</p>
+                    <p>Sitio web diseñado por <a href="https://github.com/Danrylus" target="_blank">Daniel Cadena</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+        crossorigin="anonymous"></script>
+    <script src="scripts/toggle.js"></script>
+</body>
+
+</html>
