@@ -2,20 +2,39 @@
     max-height: 120px;
 }
 
-#menu-container {
-    position: fixed;
-    top: 0;
-    right: -300px;
-    bottom: 0;
-    width: 300px;
-    background-color: #fff;
-    z-index: 9999;
-    transition: right 0.3s ease-in-out;
+@media (max-width: 767px) {
+    #navbarNavAltMarkup {
+        position: fixed;
+        top: 0;
+        right: -220px;
+        bottom: 0;
+        width: 220px;
+        background-color: #fff;
+        z-index: 9998;
+        padding: 20px;
+        font-size: 18px;
+    }
+
+    #navbarNavAltMarkup.show {
+        right: 0;
+    }
+
+    #toggle-menu {
+        margin: 20px 10px;
+        background-color: white;
+        z-index: 9999;
+    }
+
+    .navbar-brand {
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    .nav-item {
+        margin-bottom: 15px;
+    }
 }
 
-#menu-container.show {
-    right: 0;
-}
 
 #services-more {
     height: 0;
@@ -25,17 +44,30 @@
 
 .container {
     max-width: 960px;
-  }
-  
-  .pricing-header {
+}
+
+.pricing-header {
     max-width: 700px;
-  }
-  
-  .card-deck .card {
+}
+
+.card-deck .card {
     min-width: 220px;
-  }
-  
-  .border-top { border-top: 1px solid #e5e5e5; }
-  .border-bottom { border-bottom: 1px solid #e5e5e5; }
-  
-  .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+#toggle-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
