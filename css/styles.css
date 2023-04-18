@@ -345,3 +345,49 @@ body {
     height: 100px;
     border-radius: 8px;
 }
+
+.fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+}
+
+.fixed-bottom-right {
+    right: 200px;
+}
+
+.btn-block {
+    border-radius: 0;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #25d366;
+    border-color: #25d366;
+}
+
+.btn-success:hover {
+    color: #fff;
+    background-color: #128c7e;
+    border-color: #128c7e;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-danger:hover {
+    color: #fff;
+    background-color: #a71d2a;
+    border-color: #a71d2a;
+}
+
+.rounded-top-left {
+    border-top-left-radius: 20px;
+}
+
+.rounded-top-right {
+    border-top-right-radius: 20px;
+}
