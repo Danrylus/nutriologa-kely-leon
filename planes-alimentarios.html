@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrióloga Kely León</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/0efd9eb79e.js" crossorigin="anonymous"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="assets/logo.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" id="toggle-menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="menu-container">
+                <button class="navbar-toggler" type="button" onclick="closeMenu()">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" onclick="window.location.href='/'">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="scrollToSection('about-me'); closeMenu();">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="scrollToSection('services'); closeMenu();">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="scrollToSection('contact'); closeMenu()">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="scrollToSection('appointment'); closeMenu()">Agendar una cita</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page content -->
+
+    <section id="pricing" class="py-5 bg-light">
+        <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+            <h1 class="display-4">Planes alimentarios</h1>
+            <p class="lead">Obtén tu plan alimentario perfecto con mi ayuda personalizada. Consigue tus
+                objetivos de salud y bienestar con una dieta equilibrada justo para ti.</p>
+        </div>
+
+        <div class="container">
+            <div class="card-deck mb-3 text-center">
+                <div class="card mb-4 box-shadow">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-normal">Plan semanal <i class="far fa-calendar"></i>
+                        </h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ semana</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4 ">
+                            <li class="mb-2 pb-1 border-bottom">1 Diagnóstico nutricional con Inbody 120</li>
+                            <li class="mb-2 pb-1 border-bottom">1 Plan alimentario semanal</li>
+                            <li class="pb-1 border-bottom">Coaching nutricional</li>
+                        </ul>
+                        <a
+                            href="https://wa.me/593997129263?text=Hola%2C%20quisiera%20agendar%20una%20cita%20de%20nutrici%C3%B3n">
+                            <button type="button" class="btn btn-lg btn-block btn-primary">Agendar cita <i
+                                    class="fa fa-whatsapp"></i></button></a>
+                    </div>
+                </div>
+                <div class="card mb-4 box-shadow">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-normal">Plan quincenal <i class="fas fa-calendar-alt"></i>
+                        </h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">$20 <small class="text-muted">/ 15 días</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li class="mb-2 pb-1 border-bottom">1 Diagnóstico nutricional con Inbody 120</li>
+                            <li class="mb-2 pb-1 border-bottom">1 Plan alimentario quincenal</li>
+                            <li class="pb-1 border-bottom">Coaching nutricional</li>
+                        </ul>
+                        <a
+                            href="https://wa.me/593997129263?text=Hola%2C%20quisiera%20agendar%20una%20cita%20de%20nutrici%C3%B3n">
+                            <button type="button" class="btn btn-lg btn-block btn-primary">Agendar cita <i
+                                    class="fa fa-whatsapp"></i></button></a>
+                    </div>
+                </div>
+                <div class="card mb-4 box-shadow">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-normal">Plan mensual <i class="far fa-calendar-alt"></i>
+                        </h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">$35 <small class="text-muted">/ mes</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li class="mb-2 pb-1 border-bottom">1 Diagnóstico nutricional con Inbody 120</li>
+                            <li class="mb-2 pb-1 border-bottom">1 Plan alimentario mensual</li>
+                            <li class="pb-1 border-bottom">Coaching nutricional</li>
+                        </ul>
+                        <a
+                            href="https://wa.me/593997129263?text=Hola%2C%20quisiera%20agendar%20una%20cita%20de%20nutrici%C3%B3n">
+                            <button type="button" class="btn btn-lg btn-block btn-primary mt-4">Agendar cita <i
+                                    class="fa fa-whatsapp"></i></button></a>
+                        <h3 class="mt-2"><small class="text-muted">¡Mejor opción!</small> </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+                <h1 class="display-4">Ofertas exclusivas </h1>
+            </div>
+
+            <div class="container">
+                <div class="card-deck mb-3 text-center">
+                    <div class="card mb-4 box-shadow">
+                        <div class="card-header">
+                            <h4 class="my-0 font-weight-normal">Por tiempo limitado <i class="fa fa-star"></i>
+                            </h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">$55
+                            </h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li class="mb-2 pb-1 border-bottom">4 Planes semanales</li>
+                                <li class="mb-2 pb-1 border-bottom">Plan de ejercicio</li>
+                                <li class="mb-2 pb-1 border-bottom">Recetario saludable</li>
+                                <li class="mb-2 pb-1 border-bottom">Asesoría nutricional</li>
+                                <li class="pb-1 border-bottom">Coaching nutricional</li>
+                            </ul>
+                            <a
+                                href="https://wa.me/593997129263?text=Hola%2C%20quisiera%20agendar%20una%20cita%20de%20nutrici%C3%B3n">
+                                <button type="button" class="btn btn-lg btn-block btn-primary">Agendar cita <i
+                                        class="fa fa-whatsapp"></i></button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h4>Sígueme en redes sociales</h4>
+                    <a href="#"><i class="fab fa-facebook fa-2x mr-3"></i></a>
+                    <a href="#"><i class="fab fa-instagram fa-2x mr-3"></i></a>
+                    <a href="#"><i class="fab fa-tiktok fa-2x"></i></a>
+                </div>
+                <div class="col-12 text-center" style="margin-top: 30px;">
+                    <p>&copy; 2023 Nutrióloga Kely León - Todos los derechos reservados</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+        crossorigin="anonymous"></script>
+    <script src="scripts/toggle.js"></script>
+</body>
+
+</html>
