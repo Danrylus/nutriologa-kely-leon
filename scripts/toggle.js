@@ -10,16 +10,6 @@ function showMenu() {
   }
 }
 
-
-function toggleSection(id) {
-  const selectedSection = document.getElementById(id);
-  if (selectedSection.style.height) {
-    selectedSection.style.height = null;
-  } else {
-    selectedSection.style.height = selectedSection.scrollHeight + 'px';
-  }
-}
-
 function scrollToSection(id) {
   const section = document.getElementById(id);
   section.scrollIntoView({
