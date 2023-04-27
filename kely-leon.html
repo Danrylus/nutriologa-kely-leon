@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrióloga Kely León</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/0efd9eb79e.js" crossorigin="anonymous"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Floating menu -->
+
+    <div class="fixed-bottom d-block d-sm-none">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-4">
+                    <a href="tel:593997129263" class="btn btn-lg btn-danger btn-block rounded-top-right">
+                        <i class="fa fa-phone"></i> <br>Llamar
+                    </a>
+                </div>
+                <div class="col-4 ml-auto">
+                    <a href="https://wa.me/593997129263"
+                        class="btn btn-lg btn-success btn-block rounded-top-left fixed-right">
+                        <i class="fa fa-whatsapp"></i><br> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
+        <div class="container">
+
+            <button class="navbar-toggler" type="button" id="toggle-menu" onclick="showMenu()">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <a class="navbar-brand" href="/">
+                    <img src="assets/logo.png" alt="Logo">
+                </a>
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link active" href="/">Inicio <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="/#about-me">Sobre mí</a>
+                    <a class="nav-item nav-link" href="/#services">Servicios</a>
+                    <a class="nav-item nav-link" onclick="scrollToSection('contact'); showMenu();">Contacto</a>
+                    <button class="btn btn-outline-success" href="/#appointment" type="button">Agendar una cita</button>
+                </div>
+            </div>
+    </nav><br>
+
+    <!-- Page content -->
+
+
+    <header class="bg-primary bg-gradient text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 text-left text-md-center mb-3">
+                    <img class="rounded-circle img-fluid" src="assets/profile.png" alt="Foto de perfil" />
+                </div>
+                <div class="col-md-9">
+                    <h1>Kely León</h1>
+                    <h5>Nutrióloga</h5>
+                    <p class="border-top pt-3">Soy una nutrióloga con habilidades para la gestión de proyectos
+                        culturales y corporativos, destacando mi capacidad de resolución de conflictos y agilidad en la
+                        toma de decisiones.
+
+                        Soy disciplinada, perseverante y apasionada por la nutrición y la alimentación saludable,
+                        siempre buscando mejorar mi trabajo para brindar el mejor servicio posible.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="bg-dark text-white-50 mb-5">
+        <div class="container">
+            <div class="row p-3">
+                <div class="col-md pb-2 pb-md-0">
+                    <svg width="1em" height="1.5em" viewBox="0 0 16 16" class="bi bi-envelope" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
+                    </svg>
+                    <a href="#" class="text-white ml-2">kelyleon@outlook.es</a>
+                </div>
+                <div class="col-md text-md-center pb-2 pb-md-0">
+                    <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-globe" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4H2.255a7.025 7.025 0 0 1 3.072-2.472 6.7 6.7 0 0 0-.597.933c-.247.464-.462.98-.64 1.539zm-.582 3.5h-2.49c.062-.89.291-1.733.656-2.5H3.82a13.652 13.652 0 0 0-.312 2.5zM4.847 5H7.5v2.5H4.51A12.5 12.5 0 0 1 4.846 5zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5H7.5V11H4.847a12.5 12.5 0 0 1-.338-2.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12H7.5v2.923c-.67-.204-1.335-.82-1.887-1.855A7.97 7.97 0 0 1 5.145 12zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11H1.674a6.958 6.958 0 0 1-.656-2.5h2.49c.03.877.138 1.718.312 2.5zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12h2.355a7.967 7.967 0 0 1-.468 1.068c-.552 1.035-1.218 1.65-1.887 1.855V12zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5h-2.49A13.65 13.65 0 0 0 12.18 5h2.146c.365.767.594 1.61.656 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4H8.5V1.077c.67.204 1.335.82 1.887 1.855.173.324.33.682.468 1.068z" />
+                    </svg>
+                    <a href="/" class="text-white ml-2">www.nutriologakelyleon.com</a>
+                </div>
+                <div class="col-md text-md-right">
+                    <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-telephone-fill"
+                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z" />
+                    </svg>
+                    <a href="#" class="text-white ml-2">(+593) 99 712 9263</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="container">
+        <div class="row">
+            <div class="col-md mb-5">
+                <!-- work experience -->
+
+                <h2 class="mb-5">Experiencia laboral</h2>
+                <ul>
+                    <li>
+                        <h6 class="text-primary">Hospital de Especialides Eugenio Espejo,
+                            Hospital de la Policía Nacional</h6>
+                        <p>
+                        <ul>
+                            <li>Atención a pacientes con enfermedades crónicas
+                                cómo: diabetes, hipertensión arterial, obesidad, etc.</li>
+                            <li>Educación nutricional en diferentes enfermedades y
+                                etapas de la vida.</li>
+                            <li>Atención a niños, embarazadas, adultos y adultos
+                                mayores.</li>
+                            <li>Vigilancia de la correcta formulación de dietas
+                                hospitalarias con personal de cocina.</li>
+                            <li>Atención a pacientes hospitalizados en áreas de
+                                neocirugía, neurología, medicina interna.</li>
+                        </ul>
+                        </p>
+                    </li>
+                    <li>
+                        <h6 class="text-primary">Hospital San Juan de Dios</h6>
+                        <p>
+                        <ul>
+                            <li>Atención a personas geriátricas y persona con
+                                problemas de alcohol, drogras y enfermedades
+                                psiquiatrícas.</li>
+                            <li>Formular y vigilar la correcta formulación de dietas
+                                hospitalarias en conjunto al personal de cocina.</li>
+                        </ul>
+                        </p>
+                    </li>
+                    <li>
+                        <h6 class="text-primary">Centro de Salud de Lumbisí</h6>
+                        <p>
+                            <ul>
+                                <li>Atención a pacientes ambulatorios</li>
+                                <li>Charlas educativas a guarderías, escuelas, colegios y en
+                                    el centro de salud.</li>
+                            </ul>
+                        </p>
+                    </li>
+                    <li>
+                        <h6 class="text-primary">Centro Médico Latinoamérica, VIDMED y Hospital Panamericano</h6>
+                        <p>
+                        <ul>
+                            <li>Atención a pacientes con enfermedades crónicas
+                                cómo: diabetes, hipertensión arterial, obesidad, etc.</li>
+                            <li>Educación nutricional en diferentes enfermedades y
+                                etapas de la vida.</li>
+                            <li>Atención a niños, embarazadas, adultos y adultos
+                                mayores.</li>
+                            <li>Vigilancia de la correcta formulación de dietas
+                                hospitalarias con personal de cocina.</li>
+                            <li>Atención a pacientes hospitalizados en áreas de
+                                neocirugía, neurología, medicina interna.</li>
+                        </ul>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md mb-5">
+                <!-- education -->
+                <h2 class="mb-5">Educación</h2>
+                <ul>
+                    <li>
+                        <h6 class="text-primary">Nutrióloga / Universidad Internacional del Ecuador (UIDE) 2015 - 2020
+                            <p></p>
+                        </h6>
+                    </li>
+                    <li>
+                        <h6 class="text-primary">ISAK 1 / 2022</h6>
+                    </li>
+                    <li>
+                        <h6 class="text-primary">Máster en Nutrición, actividad física y deporte / 2020 - 2022</h6>
+                    </li>
+                </ul><br>
+                <h2 class="mb-5">Cursos / certificaciones</h2>
+                <ul>
+                    <li>
+                        <h6 class="text-primary">CURSO INTERNACIONAL VANGUARDIA EN NUTRICIÓN CLÍNICA, COMUNITARIA Y
+                            PÚBLICA
+                        </h6>
+                        <p>Escuela de nutriología de la Universidad Internacional del Ecuador | Quito, Ecuador</p>
+                    </li>
+                    <li>
+                        <h6 class="text-primary">CURSO DE NUTRIONAL SUPPORT IN THE PERIOPERATIVE PERIOD</h6>
+                        <p>ESPEN life-long Learning Programme on Clinical Nutrition an Metabolism | Quito, Ecuador</p>
+                    </li>
+                    <li>
+                        <h6 class="text-primary">CURSO DE ACTUALIZACIÓN EN MEDICINA DEL DEPORTE Y NUTRICIÓN</h6>
+                        <p>Escuela de nutriología de la Universidad Internacional del Ecuador | Quito, Ecuador</p>
+                    </li>
+                    <li>
+                        <h6 class="text-primary">CURSO NACIONAL DE ACTUALIZACIÓN EN NUTRICIÓN CLÍNICA Y ENTERAL</h6>
+                        <p>Escuela de nutriología de la Universidad Internacional del Ecuador | Quito, Ecuador</p>
+                    </li>
+                    <li>
+                        <h6 class="text-primary">DIETAS SALUDABLES Y SOSTENIBLES AL ALCANCE DE TODOS</h6>
+                        <p>Otorgado por la organización de las naciones unidas para la alimentación y la agricultura
+                            (FAO)</p>
+                    </li>
+                    <li>
+                        <h6 class="text-primary">EMBAJADORES DE LA FUERZA</h6>
+                        <p>Organizado por la Universidad de Especialidades Espíritu Santo y la Facultad de Ciencias
+                            Médicas
+                        </p>
+                    </li>
+                    <li>
+                        <h6 class="text-primary">CURSO DE ACTUALIZACIÓN EN OBESIDAD Y COMORBILIDADES</h6>
+                        <p>Otorgado por la Sociedad ecuatoriana de nutrición parenteral y enteral, clínica y
+                            metabolismo, la sociedad ecuatoriana de médico nutriólogos y la Universidad de las Américas
+                            Facultad de Medicina </p>
+                    </li>
+                    <li>
+                        <h6 class="text-primary">LACTANCIA MATERNA
+                        </h6>
+                        <p>UNICEF</p>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md mb-5">
+                <!-- skills -->
+                <h2 class="mb-5">Habilidades blandas</h2>
+                <ul>
+                    <li>Trabajo en equipo</li>
+                    <li>Creatividad</li>
+                    <li>Manejo de crisis</li>
+                    <li>Ofimática</li>
+                    <li>Google Drive</li>
+                </ul>
+            </div>
+            <div class="col-md">
+                <!-- recent work -->
+                <h2 class="mb-5">Idiomas</h2>
+                <ul>
+                    <li>Español: Nativo</li>
+                    <li>Inglés: Intermedio</li>
+                    <li>Francés: Principiante</li>
+                    <li>Catalán: Principante</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <section id="contact" class="bg-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Contáctame</h3>
+                    <p>Estoy dispuesta a ayudarte en todo lo relacionado con tu alimentación y bienestar.</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-phone"></i> (+593) 99 712 9263</li><br>
+                        <li><i class="fa fa-envelope-o"></i> kelyleon@outlook.es</li><br>
+                        <li><i class="fa fa-map-marker"></i> Diego Céspedes OE823 y Joaquín Ruales, Quito, Ecuador</li>
+                        <br>
+                        <li><i class="fa fa-clock-o"></i> Horarios de atención:</li>
+                        <li>Lunes a Viernes de 8am a 3pm</li>
+                        <li>Sábados de 8am a 1pm</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1994.8860770917374!2d-78.55385470503677!3d-0.2756280189007749!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d598c7f39f21b5%3A0x598dd0c7570022a9!2sUnidad%20M%C3%A9dica%20Latinoam%C3%A9rica!5e0!3m2!1ses!2sec!4v1681797410047!5m2!1ses!2sec"
+                        width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white p-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h4 class="mb-4">Sígueme en redes sociales</h4>
+                    <a href="https://www.facebook.com/NutriologaKelyLeon"><i class="fab fa-facebook fa-2x mr-3"></i></a>
+                    <a href="https://www.instagram.com/nutriologa_kely_leon/"><i
+                            class="fab fa-instagram fa-2x mr-3"></i></a>
+                    <a href="https://www.tiktok.com/@kelyleon"><i class="fab fa-tiktok fa-2x"></i></a>
+                </div>
+                <div class="col-12 text-center mt-3">
+                    <p>&copy; 2023 Nutrióloga Kely León - Todos los derechos reservados</p>
+                    <p>Sitio web diseñado por <a href="https://github.com/Danrylus" target="_blank">Daniel Cadena</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+        crossorigin="anonymous"></script>
+    <script src="scripts/toggle.js"></script>
+</body>
+
+</html>
